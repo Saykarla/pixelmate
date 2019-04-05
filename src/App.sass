@@ -1,0 +1,310 @@
+$font-stack: 'Ubuntu', sans-serif
+$font-color: #414346
+$color-black: #071d30
+
+.shadow
+  -moz-box-shadow:    3px 0px 5px 6px #F2F2F2
+  -webkit-box-shadow: 3px 0px 5px 6px #F2F2F2
+  box-shadow:         3px 0px 5px 6px #F2F2F2
+/***************************************/
+/********   Logo start  ****************/
+/***************************************/
+
+.header-logo
+  margin: 0
+  padding: 10px 0 0 45px
+  .header-link
+    text-decoration: none
+    .logo-img
+      width: 50px
+      height: 50px
+    .logo-txt
+      font-family: $font-stack
+      font-size: 20px
+      font-weight: 700
+      text-transform: uppercase
+      color: #F88F3C
+      display: inline-block
+      vertical-align: sub
+
+/***************************************/
+/********   Logo end   *****************/
+/***************************************/
+
+
+
+/***************************************/
+/********   Navigation start  **********/
+/***************************************/
+.topnav
+  float: right
+  .nav-list
+    margin: 0
+    padding: 15px
+    list-style: none
+    .nav-item
+      display: inline-block
+      .nav-link
+        text-decoration: none
+        font-family: $font-stack
+        font-size: 14px
+        font-weight: 500
+        color: $font-color
+      .nav-link
+        &:hover
+          color: #4884FF
+
+/***************************************/
+/********   Navigation end  ************/
+/***************************************/
+
+
+/***************************************/
+/********   Usermenu start  ************/
+/***************************************/
+
+.usermenu-wrapper
+  padding: 10px 10px 10px 30px
+  height: 100%
+  vertical-align: top
+  display: inline-block
+  border-left: 1px solid #BFC6CD
+  .usermenu-left
+    display: inline-block
+  .usermenu-right
+    margin: 0 10px
+    display: inline-block
+    vertical-align: middle
+    font-family: $font-stack
+    font-size: 14px
+    .usermenu-dropdown
+      display: inline-block
+      margin: 0 10px
+      
+    p, b
+      margin: 0
+      padding: 0
+      display: inline-block
+.active-obj
+  border-bottom: 2px solid #4884FF
+  background: #F9FAFA
+.usermenu-hover
+  &:hover
+    background: #F9FAFA
+/***************************************/
+/********   Usermenu end  **************/
+/***************************************/
+
+.info
+  padding: 20px 30px
+  height: 100%
+  display: inline-block
+  border-left: 1px solid #BFC6CD
+  .info-link
+    img
+      width: 25px
+      height: 25px
+      opacity: .3
+
+/***************************************/
+/********   title-sec start  ************/
+/***************************************/
+.title
+  font-family: $font-stack
+  font-size: 36px
+  color: #4884FF
+  text-align: center
+  margin: 40px
+
+/***************************************/
+/********   title-sec end  **************/
+/***************************************/
+
+/***************************************/
+/********   main-sec start  ************/
+/***************************************/
+.main-sec
+  background: #4884FF
+
+.data-wrap
+  background: #fff
+  padding: 10px 0
+  margin: 20px
+  border-radius: 7px
+
+.list-item
+  padding: 7px
+  span
+    font-size: 15px
+    color: #071d30
+    display: inline-block
+    line-height: 18px
+    padding: 0 13px
+  &:hover
+    background: #F4F4F8
+
+.list-gender
+  min-width: 75px
+
+.list-date
+  min-width: 103px
+
+.list-detail
+  float: right
+  button
+    font-size: 13
+    font-weight: 400
+    color: #fff
+    padding: 5px 20px
+    background-image: linear-gradient(to right, #f46434, #f57d46, #f6935a, #f7a771, #f8ba8a)
+    border: none
+    border-radius: 7px
+    cursor: pointer
+    transition: all .3s ease
+    &:focus
+      outline: 0
+    &:hover
+      background-image: linear-gradient(to right top, #5173b9, #6786c5, #7d99d2, #93acde, #aac0ea)
+
+.root-title
+  padding: 10px 20px 0
+  h4
+    font-size: 16px
+    font-weight: bold
+    text-transform: uppercase
+    font-family: $font-stack
+    color: $color-black
+.root-desc
+  text-align: center
+  padding-top: 30px
+  padding-bottom: 30px
+  h4
+    font-size: 18px
+    color: $color-black
+  p
+    font-size: 16px
+    color: $color-black
+    line-height: 1.2
+
+.root-form
+  max-width: 300px
+  margin: 0 auto
+  input[type=text]
+    display: block
+    width: 100%
+    border-radius: 7px
+    border: 1px solid #D3D3D3
+    background: #F4F4F8
+    padding: 5px 10px
+    &:focus
+      outline: 0
+  label
+    font-weight: bold
+    margin-bottom: 0
+    padding: 15px 0 5px
+    font-size: 15px
+
+input[type=submit]
+  background-image: linear-gradient(to right, #f46434, #f57d46, #f6935a, #f7a771, #f8ba8a)
+  border: none
+  border-radius: 7px
+  padding: 10px 25px
+  color: #fff
+  cursor: pointer
+  min-width: 80%
+  text-transform: uppercase
+  font-weight: bold
+  &:hover
+    background-image: linear-gradient(to right top, #5173b9, #6786c5, #7d99d2, #93acde, #aac0ea)
+
+.submit-wrapper
+  display: block
+  text-align: center
+  margin: 30px 0
+
+.switch-field
+  display: block
+  margin-bottom: 36px
+  overflow: hidden
+  text-align: center
+  text-transform: uppercase
+  input
+    position: absolute !important
+    clip: rect(0, 0, 0, 0)
+    height: 1px
+    width: 1px
+    border: 0
+    overflow: hidden
+  label
+    background-color: #fff
+    color: #C0C0C0
+    font-size: 14px
+    line-height: 1
+    text-align: center
+    padding: 8px 25px
+    transition: all 0.1s ease-in-out
+    min-width: 70px
+    margin: 5px
+    &:hover
+      cursor: pointer
+  input:checked + label
+    background-color: #4884FF
+    box-shadow: none
+    color: #fff
+  label
+    &:first-of-type
+      border-radius: 7px
+    &:last-of-type
+      border-radius: 7px
+
+
+/***************************************/
+/********   Footer start  **************/
+/***************************************/
+.app-footer
+  background: #071D30
+  .logo-footer
+    color: #fff
+    font-family: $font-stack
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #fff
+    display: inline-block
+    vertical-align: sub
+.footer-menu
+  list-style: none
+  display: inline-block
+  padding: 20px 30px
+  margin: 0
+  .footer-blog, .footer-faqs
+    display: inline-block
+    .footer-link
+      text-decoration: none
+      margin: 10px
+      color: #fff
+      &:hover
+        color: #4884FF
+.footer-social
+  display: inline-block
+  padding: 20px 30px
+  .social
+    margin: 5px
+    color: #fff
+    font-size: 14px
+    a
+      &:hover
+        i
+          color: #4884FF
+.lang
+  display: inline-block
+  margin: 10px
+  .lang-link
+    text-decoration: none
+    font-family: $font-stack
+    font-size: 14px
+    color: #fff
+
+/***************************************/
+/********   Footer end  **************/
+/***************************************/

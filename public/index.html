@@ -3,39 +3,134 @@
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header>
+     <div class="app-header shadow">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-2">
+             <div class="header-logo">
+               <a href="index.html" class="header-link">
+                 <img src="img/logo.png" alt="logo" class="logo-img">
+                 <p class="logo-txt">Your Logo</p>
+               </a>
+             </div>
+           </div>
+           <div class="col-5">
+            <nav class="topnav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Bills</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Transaction</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Buddy list</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Inbox</a>
+                </li>
+              </ul>
+            </nav>
+           </div>
+           <div class="col-5">
+            <div class="usermenu-wrapper usermenu-hover">
+              <div class="usermenu-left"><img src="img/purse.png"></div>
+              <div class="usermenu-right">
+                <p>Label itemu<br><b>Value itemu</b></p>
+              </div>
+            </div>
+            <div class="usermenu-wrapper active-obj">
+                <div class="usermenu-left"><img src="img/profile.png"></div>
+                <div class="usermenu-right">
+                  <p><b>Jméno Příjmení</b></p>
+                  <div class="usermenu-dropdown">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="info">
+              <a href="#" class="info-link">
+                <img src="img/quest.png">
+              </a>
+            </div>
+           </div>
+         </div>
+       </div>
+     </div>
+    </header>
+    <div class="title-sec">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="title"><h1>Testovací zadání</h1></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-3">
+            <div class="root-wrap">
+              <div id="root"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="app-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-8">
+              <div class="header-logo">
+                <a href="index.html" class="header-link">
+                 <img src="img/logo.png" alt="logo" class="logo-img">
+                 <p class="logo-footer">Your Logo</p>
+               </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <ul class="footer-menu">
+                <li class="footer-blog"><a href="#" class="footer-link">Blog</a></li>
+                <li class="footer-faqs"><a href="#" class="footer-link">FAQs</a></li>
+              </ul>
+              <div class="footer-social">
+                <a href="https://facebook.com/"><i class="fab fa-facebook-f social"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter social"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in social"></i></a>
+              </div>
+              <div class="lang">
+                <a href="#" class="lang-link">EN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+
+
+
+
+    
   </body>
 </html>
